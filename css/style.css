@@ -1,0 +1,110 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--preto);
+    color: #fff;
+}
+.container{
+    margin-left: 20px;
+}
+
+
+/* Estilo header */
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h2{
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 3rem;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #AAA;
+}
+.navigation ul li a:hover{
+    color: #fff;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+}
+.navigation ul li{
+    padding: 0 15px;
+}
+
+
+
+
+/* Estilo main */
+.filme-destaque{
+    /* background: url("../img/capa-house.jpg"); */
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    animation-name: bg-filmes;
+    animation-duration: 120s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.filme-destaque .titulo{
+    margin-top: 11%;
+    font-size: 3rem;
+}
+.filme-destaque .descricao{
+    margin-bottom: 40px;
+}
+
+.button{
+    background-color: rgba(14, 14, 14, .5);
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.button i{
+    margin-right: 5px;
+}
+.button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@keyframes bg-filmes{
+    0%{
+        background-image: url("../img/capa-house.jpg");
+    }
+    20%{
+        background-image: url("../img/breaking-bad.jpg");
+    }
+    40%{
+        background-image: url("../img/madam-cj-walker.jpg");
+    }
+    60%{
+        background-image: url("../img/warcraft.jpg");
+    }
+    80%{
+        background-image: url("../img/ozarkp.png");
+    }
+    100%{
+        background-image: url("../img/river.jpg");
+    }
+}
