@@ -16,7 +16,7 @@ body{
     color: #fff;
 }
 .container{
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 
@@ -51,7 +51,6 @@ body{
 
 /* Estilo main */
 .filme-destaque{
-    /* background: url("../img/capa-house.jpg"); */
     height: 400px;
     background-size: cover;
     display: flex;
@@ -63,12 +62,17 @@ body{
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
+.filme-destaque .container{
+    background-color: rgba(14, 14, 14, .5);
+    height: 100%;
+}
 .filme-destaque .titulo{
     margin-top: 11%;
     font-size: 3rem;
 }
 .filme-destaque .descricao{
     margin-bottom: 40px;
+    width: 50%;
 }
 
 .button{
@@ -78,7 +82,7 @@ body{
     margin-right: 20px;
     font-size: .8rem;
     cursor: pointer;
-    transition: .3s ease all;
+    transition: 700ms ease all;
 }
 .button i{
     margin-right: 5px;
@@ -86,6 +90,16 @@ body{
 .button:hover{
     background-color: #fff;
     color: #000;
+}
+
+.carrosel-filmes{
+    margin-top: 20px;
+}
+
+.box-filmes{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 @keyframes bg-filmes{
@@ -106,5 +120,57 @@ body{
     }
     100%{
         background-image: url("../img/river.jpg");
+    }
+}
+
+
+/* Media querys */
+
+@media (max-width:700px){
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .filme-destaque{
+        height: 500px;
+    }
+    .filme-destaque .titulo{
+        margin-top:40%;
+        font-size: 3rem;
+    }
+    .filme-destaque .descricao{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    .filme-destaque .button{
+        width: 250px;
+    }
+    .filme-destaque .button:first-child{
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:451px){
+    .navigation{
+        display: none;
+    }
+    .filme-destaque{
+        height: 500px;
+    }
+    .filme-destaque .titulo{
+        margin-top:4%;
+        font-size: 2.5rem;
+    }
+    .filme-destaque .descricao{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    .filme-destaque .button{
+        width: 250px;
+    }
+    .filme-destaque .button:first-child{
+        margin-bottom: 5px;
     }
 }
