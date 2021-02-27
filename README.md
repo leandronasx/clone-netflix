@@ -2,6 +2,8 @@
 
 <p align="justify">Página inicial da interface do principal site de streaming mundial, Netflix. desafio do bootcamp HTML Web Developer da Digital Innovation One.</p>
 
+<a href="https://netflix-clone-leandro.netlify.app/"></a>
+
 <h4 align="center"> 
 	✅ NETFLIX 🚀  CONCLUÍDO ✅
 </h4>
