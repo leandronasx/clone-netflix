@@ -57,10 +57,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    animation-name: bg-filmes;
+    transition: 2s ease-out all;
+/*     animation-name: bg-filmes;
     animation-duration: 120s;
     animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 .filme-destaque .container{
     background-color: rgba(14, 14, 14, .5);
@@ -69,10 +70,13 @@ body{
 .filme-destaque .titulo{
     margin-top: 11%;
     font-size: 3rem;
+    text-transform: uppercase;
+    transition: 2s ease-out all;
 }
 .filme-destaque .descricao{
     margin-bottom: 40px;
     width: 50%;
+    transition: 2s ease-out all;
 }
 
 .button{
